@@ -1,30 +1,30 @@
-import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-first-table',
+  templateUrl: './first-table.component.html',
+  styleUrls: ['./first-table.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'innerTable';
+export class FirstTableComponent implements OnInit {
+  constructor() {}
 
   table = [
     {
-      fName: 'john',
-      lName: 'Doe',
-      age: '22',
+      fName: 'Arun',
+      lName: 'Praba',
+      age: '27',
       innerTable: [
         {
-          fName: 'john',
-          address: 'San andreas',
-          pin: '623423',
-          location: '72.33'
+          fName: 'Arun',
+          address: 'BLR',
+          pin: '560068',
+          location: '77.33'
         }
       ],
       innerTableOpen: false
     },
     {
-      fName: 'Steve',
+      fName: 'Thor',
       lName: 'Smith',
       age: '33',
       innerTable: [

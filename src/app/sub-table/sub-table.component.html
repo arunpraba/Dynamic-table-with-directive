@@ -1,0 +1,16 @@
+<table style="width:95%; margin: 5px">
+  <thead style="background: #cccccc">
+    <th>Name</th>
+    <th>Address</th>
+    <th>Pin</th>
+    <th>Location</th>
+  </thead>
+  <tbody *ngFor="let x of innerTableDetails">
+    <tr>
+      <td>{{x.fName | titlecase}}</td>
+      <td>{{x.address | titlecase}}</td>
+      <td>{{x.pin | titlecase}}</td>
+      <td>{{x.location | titlecase}}</td>
+    </tr>
+  </tbody>
+</table>

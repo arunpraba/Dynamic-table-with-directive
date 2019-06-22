@@ -1,0 +1,24 @@
+<h3 align="center" style="color: #035168"> Second Table </h3>
+
+
+<table style="width:100%">
+  <thead style="background-color: #035168; color: #ffffff">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let i of table; let j = index">
+    <tr innerTable [innerTableDirective]="i.innerTable">
+      <td>{{i.fName | titlecase}}</td>
+      <td>{{i.lName | titlecase}}</td>
+      <td>{{i.age}}</td>
+      <td style="cursor:pointer" (click)="makeOpen(i.innerTable, j)">
+        {{i.innerTableOpen ? 'Less': 'View More'}}
+      </td>
+    </tr>
+
+  </tbody>
+</table>

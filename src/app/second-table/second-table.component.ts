@@ -1,12 +1,12 @@
-import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-second-table',
+  templateUrl: './second-table.component.html',
+  styleUrls: ['./second-table.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'innerTable';
+export class SecondTableComponent implements OnInit {
+  constructor() {}
 
   table = [
     {
