@@ -18,7 +18,6 @@ export class TableDirective {
 
   @HostListener('click') onClick() {
     if (this.el.nativeElement.textContent.includes('Less')) {
-      console.log(this.el);
       this.createTable();
     }
     if (this.el.nativeElement.textContent.includes('View More')) {
